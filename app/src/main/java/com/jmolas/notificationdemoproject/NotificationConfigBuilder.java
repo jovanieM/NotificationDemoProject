@@ -11,7 +11,7 @@ import android.support.v4.app.NotificationCompat;
  * Created by jmolas on 12/15/2017.
  */
 
-public class NotificationConfigBuilder {
+class NotificationConfigBuilder {
 
     private int smallIcon;
     private long[] vibratePattern;
@@ -41,10 +41,7 @@ public class NotificationConfigBuilder {
 
         if(notificationManager != null)
             notificationManager.notify(UNIQUE_ID, ncb.build());
-
     }
-
-
 
     private int getSmallIcon() {
         if (smallIcon == -1) return 0;
@@ -59,7 +56,7 @@ public class NotificationConfigBuilder {
         return vibratePattern;
     }
 
-    public void setVibratePattern(long[] vibratePattern) {
+    void setVibratePattern(long[] vibratePattern) {
         this.vibratePattern = vibratePattern;
     }
 

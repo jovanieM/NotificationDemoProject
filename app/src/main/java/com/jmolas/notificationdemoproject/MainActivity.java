@@ -10,7 +10,6 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     public void runNotification(){
 
         NotificationConfigBuilder notificationConfigBuilder = new NotificationConfigBuilder(getBaseContext());
-        
+
         notificationConfigBuilder.setAutoCancel(true);
         notificationConfigBuilder.setSmallIcon(R.mipmap.ic_launcher_round);
         notificationConfigBuilder.setTickerText("Hello notification");

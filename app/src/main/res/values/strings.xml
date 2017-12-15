@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">NotificationDemoProject</string>
+    <string name="second_activity_welcome_msg">Hello I am and activity started through Pending intent</string>
 </resources>
